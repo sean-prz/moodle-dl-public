@@ -1,0 +1,40 @@
+<!-- Display checking cookies while the typescript function checkCookies has not responded -->
+<!-- If true then moves the app, to index.html if false ask for new cookie and recheck -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checking Your Cookie</title>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+<div class="container mx-auto px-4 py-16 bg-white shadow-md rounded-lg">
+<div class="text-center">
+    <h1 class="text-2xl font-bold mb-4">Checking Your Moodle Cookie...</h1>
+    <div class="loader ease-linear rounded-full border-4 border-t-4 border-gray-200 h-8 w-8 mx-auto"></div>
+</div>
+</div>
+
+<style>
+    .loader {
+        border-top-color: #b30f0f;
+        animation: spin 1s infinite linear;
+    }
+
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+</style>
+<script src="./cookieCheck.js"></script>
+</body>
+
+</html>

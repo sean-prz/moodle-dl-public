@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="description" content="Webpage description goes here" />
+    <meta charset="utf-8">
+    <title>Moodle-DL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./out.css">
+
+</head>
+
+<body class="bg-gray-300 p-4 min-h-screen">
+    <div class="flex-row  h-full, w-full">
+
+    <div class="flex gap-4 w-full">
+        <div class="flex-row flex-1 ">
+            <div class="container  p-4 bg-white shadow-md rounded-lg">
+                <h1 class="text-3xl font-bold text-center mb-6">Moodle-Downloader</h1>
+                <div class="flex justify-center mb-4">
+                    <button id="downloadButton" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                        Download PDFs
+                    </button>
+                </div>
+            </div>
+            <div class="h-4"></div>
+            <div class="container p-4 bg-white shadow-md rounded-lg">
+                <div id="coursesContainer" class="">
+                    <div class="flex w-full p-4 bg-gray-200">
+                        <div class="course-name flex-2">Course Name</div>
+                        <div class="course-id text-left flex-1">Course ID</div>
+                        <div class="flex-1"></div>
+                    </div>
+                </div>
+                <div class="my-2">
+                    <form id="addCourseForm" class="flex justify-between w-full p-2 bg-gray-200">
+                        <input type="text" id="courseIdInput" class="course-name-input" placeholder="Course Name" required>
+                        <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white  font-medium py-1 px-3 rounded">Add Course</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="secondCol" class="flex-row  bg-white shadow-md rounded-lg flex-1 p-8 ">
+            <div class="font-bold"> Log </div>
+
+        </div>
+
+
+    </div>
+        <div class="h-4"></div>
+    <div id="statusContainer" class="w-full p-8 bg-white shadow-md rounded-lg">
+        <div class="font-bold flex-row">Status</div>
+        <div id="status">Waiting for download</div>
+    </div>
+    </div>
+
+
+
+<script type="module" src="./main.js"></script>
+<script type="module" src="./courses.js"></script>
+</body>
+</html>
