@@ -9,6 +9,7 @@
   "scripts": {
     "compile": "tsc",
     "elec": "cp -r src/public/* dist/public/ && tsc && electron dist/electron/main.js",
+    "elec-win": "electron dist/electron/main.js",
     "start": "electron-forge start",
     "rebuild": "electron-rebuild -f -w better-sqlite3",
     "package": "electron-forge package",
