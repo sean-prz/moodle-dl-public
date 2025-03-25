@@ -16,8 +16,8 @@
 <body class="bg-gray-300 p-4 min-h-screen">
     <div class="flex-row  h-full, w-full">
 
-    <div class="flex gap-4 w-full">
-        <div class="flex-row flex-1 ">
+    <div class="flex flex-container gap-4 w-full h-min">
+        <div id="firstCol" class="flex-1 first-child flex-row row">
             <div class="container  p-4 bg-white shadow-md rounded-lg">
                 <h1 class="text-3xl font-bold text-center mb-6">Moodle-Downloader</h1>
                 <div class="flex justify-center mb-4">
@@ -43,8 +43,11 @@
                 </div>
             </div>
         </div>
-        <div id="secondCol" class="flex-row  bg-white shadow-md rounded-lg flex-1 p-8 ">
+        <div id="secondCol" class="other-child flex-1 flex-row bg-white shadow-md rounded-lg  p-8">
             <div class="font-bold"> Log </div>
+                <div id="log" class="overflow-y-scroll h-64">
+                </div>
+            </div>
 
         </div>
 

@@ -51,3 +51,6 @@ ws.onclose = () => {
 ws.onerror = (error) => {
   console.error('WebSocket error: ', error);
 };
+
+// on document ready with jQuery
+

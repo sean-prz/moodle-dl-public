@@ -10,7 +10,6 @@
     "compile": "tsc",
     "elec": "cp -r src/public/* dist/public/ && tsc && electron dist/electron/main.js",
     "start": "electron-forge start",
-    "build": "esbuild src/main.ts --bundle --platform=node --outfile=release/moodle-dw.js --external:better-sqlite3 --external:open &&  cp src/public/* release/public/",
     "rebuild": "electron-rebuild -f -w better-sqlite3",
     "package": "electron-forge package",
     "make": "electron-forge make"
